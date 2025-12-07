@@ -1,0 +1,42 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /streaming.html
+Allow: /articles.html
+Allow: /articles-page2.html
+Allow: /articles-page3.html
+Allow: /articles/what-a-wonderful-world.html
+Allow: /articles/i-dont-want.html
+Allow: /articles/louis-armstrong.html
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /sitemap.xml
+
+# Запрет индексации служебных файлов
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /*.sql$
+Disallow: /*.sql.*$
+Disallow: /*.env
+Disallow: /*.env.*
+Disallow: /*.git
+Disallow: /*.git.*
+Disallow: /*.DS_Store
+Disallow: /.git/
+Disallow: /*.json$
+Disallow: /*.md$
+Disallow: /*.txt$
+Disallow: /*.yml$
+Disallow: /*.yaml$
+Disallow: /*.config$
+Disallow: /*.lock$
+
+# Разрешаем индексацию robots.txt и sitemap.xml
+Allow: /robots.txt
+Allow: /sitemap.xml
+
+Host: https://7th-note.ru
+Sitemap: https://7th-note.ru/sitemap.xml 
+
