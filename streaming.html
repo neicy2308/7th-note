@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Аудиовещание на портале 7th Note. Джазовое радио, тематические плейлисты и подкасты. Слушайте классический и современный джаз онлайн.">
+    <meta name="keywords" content="Аудиовещание, 7th Note, джазовое радио, джазовые подкасты, музыкальные статьи">
+    <title>Аудиовещание - 7th Note</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/radio.css">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="7th Note" class="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="streaming.html">Аудиовещание</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="article.html">Статьи</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex search-form" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                        <button class="btn search-btn" type="submit">
+                            <img src="images/search-icon.png" alt="search-icon">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="radio-hero">
+            <div class="radio-hero-content">
+                <h1>Джазовое радио</h1>
+                <p>Погрузитесь в мир джазовой музыки с нашими тщательно подобранными радиостанциями</p>
+            </div>
+        </section>
+
+        <section class="radio-stations">
+            <div class="station-grid">
+                <div class="station-card">
+                    <div class="station-image">
+                        <img src="images/old-jazz.jpg" alt="Jazz Radio">
+                    </div>
+                    <div class="station-info">
+                        <h3>Jazz Classics</h3>
+                        <p>Классический джаз всех времен</p>
+                        <div class="player-controls">
+                            <audio id="player1" src="https://strm112.1.fm/ajazz_mobile_mp3">
+                                Ваш браузер не поддерживает аудио элемент.
+                            </audio>
+                            <button class="play-button" data-player="player1">
+                                <img src="images/play.png" alt="Play" class="play-icon">
+                                <img src="images/pause.png" alt="Pause" class="pause-icon hidden">
+                            </button>
+                            <div class="volume-control">
+                                <input type="range" min="0" max="100" value="80" class="volume-slider">
+                                <span class="volume-value">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="station-card">
+                    <div class="station-image">
+                        <img src="images/smooth-jazz.jpg" alt="Smooth Jazz">
+                    </div>
+                    <div class="station-info">
+                        <h3>Smooth Jazz</h3>
+                        <p>Мягкий и расслабляющий джаз</p>
+                        <div class="player-controls">
+                            <audio id="player2" src="https://stream.srg-ssr.ch/m/rsj/mp3_128">
+                                Ваш браузер не поддерживает аудио элемент.
+                            </audio>
+                            <button class="play-button" data-player="player2">
+                                <img src="images/play.png" alt="Play" class="play-icon">
+                                <img src="images/pause.png" alt="Pause" class="pause-icon hidden">
+                            </button>
+                            <div class="volume-control">
+                                <input type="range" min="0" max="100" value="80" class="volume-slider">
+                                <span class="volume-value">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="station-card">
+                    <div class="station-image">
+                        <img src="images/modern-jazz.jpg" alt="Modern Jazz">
+                    </div>
+                    <div class="station-info">
+                        <h3>Modern Jazz</h3>
+                        <p>Современные джазовые композиции</p>
+                        <div class="player-controls">
+                            <audio id="player3" src="https://strm112.1.fm/smoothjazz_mobile_mp3">
+                                Ваш браузер не поддерживает аудио элемент.
+                            </audio>
+                            <button class="play-button" data-player="player3">
+                                <img src="images/play.png" alt="Play" class="play-icon">
+                                <img src="images/pause.png" alt="Pause" class="pause-icon hidden">
+                            </button>
+                            <div class="volume-control">
+                                <input type="range" min="0" max="100" value="80" class="volume-slider">
+                                <span class="volume-value">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="playlists">
+            <div class="section-header">
+                <h2>Подборки</h2>
+                <p>Тематические плейлисты скоро появятся на нашем портале</p>
+            </div>
+            <div class="coming-soon">
+                <div class="playlist-preview">
+                    <div class="preview-card">
+                        <img src="images/Work-in-Process.jpg" alt="Классика бибопа">
+                        <h3>Классика бибопа</h3>
+                        <button class="status-btn">Скоро</button>
+                    </div>
+                    <div class="preview-card">
+                        <img src="images/Work-in-Process.jpg" alt="Джаз-фьюжн 70-х">
+                        <h3>Джаз-фьюжн 70-х</h3>
+                        <button class="status-btn">Скоро</button>
+                    </div>
+                    <div class="preview-card">
+                        <img src="images/Work-in-Process.jpg" alt="Современный джаз">
+                        <h3>Современный джаз</h3>
+                        <button class="status-btn">Скоро</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="podcasts">
+            <div class="section-header">
+                <h2>Подкасты</h2>
+                <p>Авторские подкасты о джазе скоро на 7th Note</p>
+            </div>
+            <div class="coming-soon">
+                <div class="podcast-preview">
+                    <div class="preview-card">
+                        <img src="images/Work-in-Process.jpg" alt="История джаза">
+                        <h3>История джаза</h3>
+                        <p>Еженедельный подкаст об истории джазовой музыки</p>
+                        <button class="status-btn">Скоро</button>
+                    </div>
+                    <div class="preview-card">
+                        <img src="images/Work-in-Process.jpg" alt="Джазовые легенды">
+                        <h3>Джазовые легенды</h3>
+                        <p>Биографии великих джазовых музыкантов</p>
+                        <button class="status-btn">Скоро</button>
+                    </div>
+                    <div class="preview-card">
+                        <img src="images/Work-in-Process.jpg" alt="Современная сцена">
+                        <h3>Современная сцена</h3>
+                        <p>Интервью с современными джазовыми музыкантами</p>
+                        <button class="status-btn">Скоро</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://t.me/ch_7th_note" class="telegram"><img src="../images/footer-tg0.svg" alt=""></a>
+                <a href="mailto:contact@7th-note.ru" class="email"><img src="../images/footer-mail0.svg" alt=""></a>
+                <a href="https://vk.com/7th_note" class="vk"><img src="../images/footer-vk0.svg" alt=""></a>
+            </div>
+            <div class="copyright">
+                <p>7th Note - портал джазовой музыки 2025 &copy;</p>
+            </div>
+            <div class="contact">
+                <p><a href="mailto:contact@7th-note.ru" style="color: inherit; text-decoration: none;">contact@7th-note.ru</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/radio.js"></script>
+  	<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(99902827, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/99902827" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BB3EB5X8LX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BB3EB5X8LX');
+</script>
+</body>
+</html>
